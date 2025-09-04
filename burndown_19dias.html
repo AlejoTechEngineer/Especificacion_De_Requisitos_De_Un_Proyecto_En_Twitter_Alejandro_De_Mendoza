@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Burndown Chart - 19 Días</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      canvas {
+        max-width: 800px;
+        max-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "Día 0 (30/08/2025)",
+            "Día 1 (31/08/2025)",
+            "Día 2 (01/09/2025)",
+            "Día 3 (02/09/2025)",
+            "Día 4 (03/09/2025)",
+            "Día 5 (04/09/2025)",
+            "Día 6 (05/09/2025)",
+            "Día 7 (06/09/2025)",
+            "Día 8 (07/09/2025)",
+            "Día 9 (08/09/2025)",
+            "Día 10 (09/09/2025)",
+            "Día 11 (10/09/2025)",
+            "Día 12 (11/09/2025)",
+            "Día 13 (12/09/2025)",
+            "Día 14 (13/09/2025)",
+            "Día 15 (14/09/2025)",
+            "Día 16 (15/09/2025)",
+            "Día 17 (16/09/2025)",
+            "Día 18 (17/09/2025)",
+            "Día 19 (18/09/2025)",
+          ],
+          datasets: [
+            {
+              label: "Horas Ideales",
+              data: [
+                300, 284.21, 268.42, 252.63, 236.84, 221.05, 205.26, 189.47,
+                173.68, 157.89, 142.11, 126.32, 110.53, 94.74, 78.95, 63.16,
+                47.37, 31.58, 15.79, 0,
+              ],
+              borderColor: "#36A2EB",
+              backgroundColor: "#36A2EB",
+              fill: false,
+              tension: 0,
+            },
+            {
+              label: "Horas Actuales",
+              data: [
+                300, 288, 276, 264, 252, 240, 228, 216, 204, 192, 180, 168, 156,
+                144, 132, 120, 108, 96, 84, 70,
+              ],
+              borderColor: "#FF6384",
+              backgroundColor: "#FF6384",
+              fill: false,
+              tension: 0,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 300,
+              title: {
+                display: true,
+                text: "Horas Restantes",
+              },
+            },
+            x: {
+              title: {
+                display: true,
+                text: "Días del Sprint (30/08/2025 - 18/09/2025)",
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "Burndown Chart - 19 Días (Laboratorio Twitter App)",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Burndown Chart - Primeros 3 Días</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      canvas {
+        max-width: 800px;
+        max-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "Día 0 (30/08/2025)",
+            "Día 1 (31/08/2025)",
+            "Día 2 (01/09/2025)",
+          ],
+          datasets: [
+            {
+              label: "Horas Ideales",
+              data: [300, 284.21, 268.42],
+              borderColor: "#36A2EB",
+              backgroundColor: "#36A2EB",
+              fill: false,
+              tension: 0,
+            },
+            {
+              label: "Horas Actuales",
+              data: [300, 288, 276],
+              borderColor: "#FF6384",
+              backgroundColor: "#FF6384",
+              fill: false,
+              tension: 0,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 300,
+              title: {
+                display: true,
+                text: "Horas Restantes",
+              },
+            },
+            x: {
+              title: {
+                display: true,
+                text: "Días del Sprint",
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "Burndown Chart - Primeros 3 Días (Laboratorio Twitter App)",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

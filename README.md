@@ -1,3 +1,5 @@
+<div align="center">
+
 # Especificación de Requisitos — Proyecto Twitter Features
 
 ![Scrum](https://img.shields.io/badge/SCRUM-Agile-FF6B35?style=for-the-badge)
@@ -7,6 +9,10 @@
 > Especificación completa de requisitos para un proyecto de nuevas funcionalidades en Twitter/X con historias de usuario, épicas en Jira y burn-down charts.
 
 ## Descripción
+
+</div>
+
+---
 
 Especificación de requisitos de software aplicando metodología **SCRUM**: definición de épicas, historias de usuario con criterios de aceptación (formato GIVEN/WHEN/THEN), estimación por puntos de historia, backlog priorizado en **Jira** y gráficas de burn-down de 3 y 19 días para seguimiento del sprint.
 
@@ -30,3 +36,12 @@ Especificación de requisitos de software aplicando metodología **SCRUM**: defi
 
 **Asignatura:** Ingeniería de Software · **Institución:** Ingeniería Informática
 **Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista Ingeniería de Software
+
+---
+
+## Autor
+
+**Alejandro De Mendoza**  
+Ingeniero Informático · Especialista en IA · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
+
+[![GitHub](https://img.shields.io/badge/GitHub-AlejoTechEngineer-181717?style=for-the-badge&logo=github)](https://github.com/AlejoTechEngineer)

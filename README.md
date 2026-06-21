@@ -25,20 +25,6 @@ Especificación de requisitos de software aplicando metodología **SCRUM**: defi
 | `burndown_19dias.html` | Gráfica burn-down sprint completo (19 días) |
 | `Enlace al Proyecto de Jira.*` | Enlace al tablero Jira del proyecto |
 
-## Artefactos SCRUM generados
-
-- **Épicas** definidas por dominio funcional (perfil, feed, seguridad, analytics)
-- **Historias de usuario** con criterios de aceptación GIVEN/WHEN/THEN
-- **Story points** estimados por complejidad relativa
-- **Burn-down charts** interactivos para seguimiento de velocidad del equipo
-
-## Contexto académico
-
-**Asignatura:** Ingeniería de Software · **Institución:** Ingeniería Informática
-**Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista Ingeniería de Software
-
----
-
 ## Arquitectura
 
 ```mermaid
@@ -55,6 +41,20 @@ flowchart TD
     I -- Si --> J[Revision y Retrospectiva]
     J --> K[Enlace al Proyecto de Jira]
 ```
+
+## Artefactos SCRUM generados
+
+- **Épicas** definidas por dominio funcional (perfil, feed, seguridad, analytics)
+- **Historias de usuario** con criterios de aceptación GIVEN/WHEN/THEN
+- **Story points** estimados por complejidad relativa
+- **Burn-down charts** interactivos para seguimiento de velocidad del equipo
+
+## Contexto académico
+
+**Asignatura:** Ingeniería de Software · **Institución:** Ingeniería Informática
+**Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista Ingeniería de Software
+
+---
 
 ## Autor
 

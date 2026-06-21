@@ -39,6 +39,23 @@ Especificación de requisitos de software aplicando metodología **SCRUM**: defi
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[Definicion de epicas - Jira Board] --> B[Historias de usuario - GIVEN / WHEN / THEN]
+    B --> C[Estimacion por Story Points]
+    C --> D[Backlog priorizado - Plantilla XLSX]
+    D --> E[Inicio de Sprint]
+    E --> F{Seguimiento}
+    F --> G[burndown_3dias.html - Sprint corto 3 dias]
+    F --> H[burndown_19dias.html - Sprint completo 19 dias]
+    G & H --> I{Sprint completado?}
+    I -- No --> E
+    I -- Si --> J[Revision y Retrospectiva]
+    J --> K[Enlace al Proyecto de Jira]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  
